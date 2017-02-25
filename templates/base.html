@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Query Engine</title>
+</head>
+<body>
+
+
+
+<form action="/query"  method="POST" enctype="multipart/form-data" >
+<label>Enter Query</label><br>
+<textarea rows="4" cols="50"  name="query">
+</textarea><br>
+<label>Memcache?</label>
+<input type="radio" name="one" value="1"> YES </input>
+<input type="radio" name="one" value="2"> NO </input>
+<br>
+<input type="submit" name="submit" href="/query">
+</form>
+
+<form action="/prefix"  method="POST" enctype="multipart/form-data">
+    <label>
+        Enter the Number of Times
+    </label>
+    <input type="textbox" name="nof"><br>
+    <label>Memcache?</label>
+<input type="radio" name="one" value="1"> YES </input>
+<input type="radio" name="one" value="2"> NO </input>
+<br>
+<input type="submit" name="submit" href="/prefix">
+
+
+
+
+
+</form>
+
+
+<form action="/flush_all"  method="POST" enctype="multipart/form-data">
+    <input type="submit" value="FLUSH ALL">
+</form>
+</form>
+</body>
